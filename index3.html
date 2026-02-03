@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Face</title>
+    <!-- Load p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body>
+    <script>
+        function setup() 
+        {
+            
+            createCanvas(400, 400);
+            
+            let x, y, v;
+
+            void setup() 
+            {
+  size(400,400);
+  x = 200;
+  y = 200;
+  v = 2;
+}
+void draw() 
+{
+  background(25);
+  fill(167);
+  ellipse(x,y,50,50);
+  y = y + v;
+  if(y>400){
+    v = -2;
+  }else if(y<0){
+    v = 2;
+  }
+}
+   
+        }
+            
+        </script>
+</body>
+</html>
